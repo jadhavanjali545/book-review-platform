@@ -30,11 +30,11 @@ export default function BookDetailPage() {
   useEffect(() => {
     async function fetchBookAndReviews() {
       try {
-        const bookRes = await fetch(`http://localhost:5001/api/books/${id}`);
+        const bookRes = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/books/${id}`);
         if (!bookRes.ok) throw new Error('Failed to fetch book');
         const bookData = await bookRes.json();
 
-        const reviewsRes = await fetch(`http://localhost:5001/api/reviews?bookId=${id}`);
+        const reviewsRes = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/reviews?bookId=${id}`);
         if (!reviewsRes.ok) throw new Error('Failed to fetch reviews');
         const reviewsData = await reviewsRes.json();
 
@@ -63,7 +63,7 @@ export default function BookDetailPage() {
     setFormError(null);
 
     try {
-      const res = await fetch('http://localhost:5001/api/reviews', {
+      const res = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/reviews`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ bookId: id, user: userName, comment, rating }),

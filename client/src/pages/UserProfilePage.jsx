@@ -8,7 +8,7 @@ export default function UserProfilePage() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:5001/api/users/${id}`)  // check this URL!
+    fetch(`${process.env.REACT_APP_BACKEND_URL}/api/users/${id}`)  // check this URL!
       .then(res => {
         if (!res.ok) throw new Error('Failed to fetch user');
         return res.json();

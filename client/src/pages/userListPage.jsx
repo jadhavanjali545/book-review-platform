@@ -6,7 +6,7 @@ export default function UserListPage() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:5001/api/users') // Your backend users endpoint
+    fetch(`${process.env.REACT_APP_BACKEND_URL}/api/users`) // Your backend users endpoint
       .then((res) => {
         if (!res.ok) throw new Error('Failed to fetch users');
         return res.json();
