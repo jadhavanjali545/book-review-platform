@@ -1,4 +1,4 @@
-where should i write this # 📚 Book Review Platform
+ # 📚 Book Review Platform
 
 A full-stack book review platform where users can browse books, read and write reviews, and rate books. Built with a **React** frontend, **Node.js/Express** backend, and **MongoDB** for data storage.
 
