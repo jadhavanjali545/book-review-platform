@@ -6,7 +6,7 @@ A full-stack book review platform where users can browse books, read and write r
 
 ## 🚀 Live Demo
 
-🌐 **Frontend**: [Book Review Platform on Vercel](book-review-platform-jade.vercel.app)  
+🌐 **Frontend**: [Book Review Platform on Vercel](https://book-review-platform-jade.vercel.app)  
 🌐 **Backend**: [Backend API on Render]([https://your-backend-url.onrender.com](https://book-review-platform-s4dy.onrender.com)) 
 
 ---
