@@ -119,7 +119,7 @@ export default function BookListPage() {
             >
               <Link to={`/books/${book._id || book.id}`} style={{ color: 'inherit', textDecoration: 'none' }}>
                 <img
-                  src={`${apiBaseUrl}${book.image}`} // Assuming book.image is a path like "/uploads/book1.jpg"
+                  src={`/${book.image}`} // Assuming book.image is a path like "/uploads/book1.jpg"
                   alt={book.title}
                   style={{ width: '100%', height: 320, objectFit: 'cover', filter: 'drop-shadow(0 0 8px rgba(38, 77, 228, 0.2))' }}
                 />

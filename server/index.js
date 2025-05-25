@@ -52,12 +52,12 @@ async function seedBooks() {
       console.log('--- Existing books deleted. Proceeding to insert new seeds... ---');
 
       await Book.insertMany([
-        { title: "My First Book", author: "Anjali", description: "Sample book description", genre: "Fiction", rating: 4, image: "/logo001.png" },
-        { title: "Adventures in Coding", author: "John Doe", description: "Learn programming with fun!", genre: "Education", rating: 5, image: "/logo002.png" },
-        { title: "Nature's Secrets", author: "Jane Smith", description: "Discover the beauty of nature", genre: "Non-Fiction", rating: 3 , image: "/logo003.png"},
-        { title: "Mystery of the Lost City", author: "Alex Roe", description: "A thrilling mystery awaits", genre: "Thriller", rating: 4 , image: "/logo004.png"},
-        { title: "Cooking Made Easy", author: "Chef Sanjeev", description: "Delicious recipes for beginners", genre: "Cooking", rating: 5 , image: "/logo005.png"},
-        { title: "Space Explorers", author: "Elon Space", description: "Journey through the stars", genre: "Sci-Fi", rating: 4 , image: "/logo006.png"},
+        { title: "My First Book", author: "Anjali", description: "Sample book description", genre: "Fiction", rating: 4, image: "logo001.png" },
+        { title: "Adventures in Coding", author: "John Doe", description: "Learn programming with fun!", genre: "Education", rating: 5, image: "logo002.png" },
+        { title: "Nature's Secrets", author: "Jane Smith", description: "Discover the beauty of nature", genre: "Non-Fiction", rating: 3 , image: "logo003.png"},
+        { title: "Mystery of the Lost City", author: "Alex Roe", description: "A thrilling mystery awaits", genre: "Thriller", rating: 4 , image: "logo004.png"},
+        { title: "Cooking Made Easy", author: "Chef Sanjeev", description: "Delicious recipes for beginners", genre: "Cooking", rating: 5 , image: "logo005.png"},
+        { title: "Space Explorers", author: "Elon Space", description: "Journey through the stars", genre: "Sci-Fi", rating: 4 , image: "logo006.png"},
       ]);
       console.log('Books seeded successfully!');
     }else{
